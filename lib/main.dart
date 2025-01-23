@@ -1,6 +1,5 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+import 'package:joshua/home.dart';
 
 void main() => runApp(const MyApp());
 
@@ -9,7 +8,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Myapp();
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: Myapp(),
+    );
   }
 }
 
@@ -29,58 +31,22 @@ class _MyappState extends State<Myapp> {
     double height = MediaQuery.of(context).size.height;
     double width = MediaQuery.of(context).size.width;
 
-    return  MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: SafeArea(
-          child: Stack(
-            children: [
-              Positioned(
-                top: 20,
-                left: 0,
-                  height: height * 0.25,
-                right: 0,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: Colors.blueAccent
-                  ),
-                ),
+    return Scaffold(
+        body: Stack(
+          children: [
+            Positioned(
+              left: width * 0.35,
+              right: width * 0.35,
+              bottom: height * 0.05,
+              child: ElevatedButton(
+                onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const MyHome()));
+                },
+                child: const Text("Get Started"),
               ),
-              Positioned(
-                top: height * 0.25,
-                left: 0,
-                height: height * 0.25,
-                right: 0,
-                child: Container(
-                  decoration: const BoxDecoration(
-                    color:  Color.fromARGB(255, 0, 0, 0)
-                  ),
-                ),
-              ),
-              Positioned(
-                top: height * 0.15,
-                left: width * 0.1,
-                height: height * 0.95,
-                right: width * 0.1,
-                child: Container(
-                  decoration: BoxDecoration(
-                    color: const Color.fromARGB(255, 255, 255, 255),
-                    borderRadius: BorderRadius.circular(20),
-                    boxShadow: [
-                      BoxShadow(
-                        color: const Color.fromARGB(255, 170, 19, 19),
-                        blurRadius: 20,
-                        spreadRadius: 5,
-                        offset: Offset(4, 4)
-                      )
-                    ]
-                  ),
-                ),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
-      ),
-    );
+      );
   }
 }

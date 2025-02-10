@@ -21,15 +21,15 @@ class _MenuState extends State<Menu> {
         body: Stack(
           children: [
             Positioned(
+              height: height * 3,
               child: Container(
-                height: height * 0.3,
                 decoration: BoxDecoration(
                   color: Colors.orange
                 ),
               ),
-            )        
+            )
           ],
-        ),
+        )
       ),
     );
   }

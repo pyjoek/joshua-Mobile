@@ -75,49 +75,49 @@ class _MyhomeState extends State<Myhome> {
                     child: Column(
                       children: [
                         Container(
-                    height: height * 0.35,
-                    decoration: BoxDecoration(
-                      color: bgWhite,
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 10,
-                          spreadRadius: 0,
-                          color: Colors.white,
-                        )
-                      ]
-                    ),
-                  ),
-                  SizedBox(height: height * 0.02,),
-                  Container(
-                    height: height * 0.35,
-                    decoration: BoxDecoration(
-                      color: bgWhite,
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 10,
-                          spreadRadius: 0,
-                          color: Colors.white,
-                        )
-                      ]
-                    ),
-                  ),
-                  SizedBox(height: height * 0.02,),
-                  Container(
-                    height: height * 0.35,
-                    decoration: BoxDecoration(
-                      color: bgWhite,
-                      borderRadius: BorderRadius.circular(25),
-                      boxShadow: [
-                        BoxShadow(
-                          blurRadius: 10,
-                          spreadRadius: 0,
-                          color: Colors.white,
-                        )
-                      ]
-                    ),
-                  ),
+                          height: height * 0.35,
+                          decoration: BoxDecoration(
+                            color: bgWhite,
+                            borderRadius: BorderRadius.circular(25),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 10,
+                                spreadRadius: 0,
+                                color: Colors.white,
+                              )
+                            ]
+                          ),
+                        ),
+                        SizedBox(height: height * 0.02,),
+                        Container(
+                          height: height * 0.35,
+                          decoration: BoxDecoration(
+                            color: bgWhite,
+                            borderRadius: BorderRadius.circular(25),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 10,
+                                spreadRadius: 0,
+                                color: Colors.white,
+                              )
+                            ]
+                          ),
+                        ),
+                        SizedBox(height: height * 0.02,),
+                        Container(
+                          height: height * 0.35,
+                          decoration: BoxDecoration(
+                            color: bgWhite,
+                            borderRadius: BorderRadius.circular(25),
+                            boxShadow: [
+                              BoxShadow(
+                                blurRadius: 10,
+                                spreadRadius: 0,
+                                color: Colors.white,
+                              )
+                            ]
+                          ),
+                        ),
                       ],
                     ),
                   )
